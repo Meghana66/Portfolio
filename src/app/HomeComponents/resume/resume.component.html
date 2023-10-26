@@ -1,0 +1,47 @@
+<div class="section bg-dark-1">
+  <div class="header-text position-relative">
+    <h2 class="text-resize text-white w-100">SUMMARY</h2>
+    <p class="text-ontop text-white w-100 mt p-vw">
+      Resume
+      <span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span>
+    </p>
+  </div>
+
+  <div class="row m-t-1">
+    <div class="col-md-6">
+      <mat-card class="bg-b text-white m-t-1 br-10" *ngFor="let c of colleges">
+        <mat-card-content>
+          <div class="p-1 fw-600">
+            <span class="date bg-g p-3-1 br-10">{{ c.date }}</span>
+            <h3 class="course ts-20 tp-1">{{ c.course }}</h3>
+            <p class="college text-green">{{ c.name }}</p>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-md-6">
+      <mat-card class="bg-b text-white m-t-1 br-10" *ngFor="let e of experinces">
+        <mat-card-content>
+          <div class="p-1 fw-600">
+            <span class="date bg-g p-3-1 br-10">{{ e.date }}</span>
+            <h3 class="course ts-20 tp-1">{{ e.designation }}</h3>
+            <p class="college text-green">{{ e.company }}</p>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+  <h2 class="skills text-white fw-600 m-tb-2">My Skills</h2>
+  <div class="row">
+    <div class="col-md-6 p-lr-2" *ngFor="let s of skills">
+      <p class="fw-500 text-start mb-2 text-light">
+        {{s.skill}} <span class="float-end">{{s.percentage}}%</span>
+      </p>
+      <div class="progress progress-sm mb-4 bg-b">
+        <div class="progress-bar" role="progressbar" aria-valuenow="s.skill" aria-valuemin="0" aria-valuemax="100"
+          [style.width.%]="s.percentage"></div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,99 @@
+.section{
+  padding: 4.5rem 3.5rem;
+}
+.header-text{
+  text-align: center;
+}
+
+.text-resize{
+  opacity: 0.1;
+  font-size: calc(1.3rem + 8.4vw)!important;
+}
+
+.text-ontop{
+  font-size: 2.25rem;
+  align-self: center!important;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.position-relative{
+  position: relative;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.border-primary {
+  border-color: #20c997!important;
+}
+
+.heading-separator-line {
+  width: 80px;
+}
+
+.p-1{
+  padding: 0.5rem 1rem !important;
+}
+
+.bg-b {
+  background-color: #111418;
+}
+
+.br-10{
+  border-radius: 10px;
+}
+
+
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-inline .form-control {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.form-row > .col {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+input.ng-invalid.ng-touched {
+  border: red 1px solid;
+}
+
+textarea.ng-invalid.ng-touched {
+  border: red 1px solid;
+}
+
+.ng-submitted input.ng-invalid.ng-untouched
+{
+  border: red 1px solid;
+}
+
+.ng-submitted textarea.ng-invalid.ng-untouched
+{
+  border: red 1px solid;
+}
+
+
+.btn-clr{
+  background-color: #20c997 !important;
+}

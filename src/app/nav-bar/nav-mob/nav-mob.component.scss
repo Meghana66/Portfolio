@@ -1,0 +1,40 @@
+
+.bg-nav{
+  background-color: #111418!important;
+}
+.cursor{
+  color: #fff;
+}
+.text-white{
+  color: #fff !important;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.fw-600{
+  font-weight: 600 ;
+}
+
+.p-lr {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  visibility: hidden;
+}
+.fl-rt{
+  float: right;
+}
+
+a.active{
+  color: #20c997 !important;
+}
+
+@media (max-width: 599px) {
+.p-lr{
+  visibility: visible;
+}
+}

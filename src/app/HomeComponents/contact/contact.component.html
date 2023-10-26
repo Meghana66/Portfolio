@@ -1,0 +1,32 @@
+<div class="section bg-dark-2">
+  <div class="header-text position-relative">
+    <h2 class="text-resize text-white w-100">Contact</h2>
+    <p class="text-ontop text-white w-100 mt p-vw">
+      Get in Touch
+      <span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span>
+    </p>
+  </div>
+
+
+  <form [formGroup]="FormData" #formDirective="ngForm" (ngSubmit)="onSubmit(FormData)">
+    <div class="row">
+      <div class="form-group col-md-6">
+        <input type="text" class="form-control" id="name"
+        placeholder="Name" name="name" formControlName="name">
+      </div>
+      <div class="form-group col-md-6">
+        <input type="email" class="form-control" id="email" placeholder="Email" name="email" formControlName="email">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-md-12">
+        <textarea rows="4" class="form-control" id="message" placeholder="Your message...."
+        name="message" formControlName="message"></textarea>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-clr text-white">Send message</button>
+  </form>
+
+
+
+</div>

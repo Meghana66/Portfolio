@@ -1,0 +1,49 @@
+<div class="section bg-dark-2">
+  <div class="header-text position-relative">
+    <h2 class="text-resize text-white w-100">PORTFOLIO</h2>
+    <p class="text-ontop text-white w-100 mt p-vw">
+      My Work
+      <span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span>
+    </p>
+  </div>
+
+  <div class="container m-t-2">
+      <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let project of projects">
+            <div class="content">
+              <a data-toggle="modal" data-target="#exampleModalCenter" class="pointer" (click)="setImage(project)">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="{{project.mainImage}}" />
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">{{project.name}}</h3>
+                </div>
+              </a>
+            </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item" [ngClass]="{'active' : i === 0}" *ngFor="let image of Images; let i=index">
+              <img class="d-block w-100 popup-image" src="{{image}}" alt="{{i}}">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

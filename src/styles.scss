@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "../node_modules/angular-notifier/styles";
+.bg-dark-1 {
+  background-color: #212529!important;
+}
+
+.bg-dark-2 {
+  background-color: #343a40!important;
+}
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

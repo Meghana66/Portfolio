@@ -1,0 +1,48 @@
+<div class="section bg-dark-1">
+  <div class="about-me position-relative">
+    <h2 class="text-resize text-white w-100">ABOUT ME</h2>
+    <p class="text-ontop text-white w-100 mt p-vw">
+      Know Me More
+      <span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span>
+    </p>
+  </div>
+
+  <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" class="details text-white">
+    <div fxFlex="70" fxFlex.lt-md="70" fxFlex.lt-sm="100" class="summary p-1">
+      <h1>I'm {{ name }}, a Web Developer</h1>
+      {{ summary }}
+    </div>
+    <div fxFlex="30" fxFlex.lt-md="30" fxFlex.lt-sm="100" class="info">
+      <ul class="list-style-2 list-style-light text-light pl-0">
+        <li><span class="fw-600 me-2">Name:</span>{{name}}</li>
+        <li>
+          <span class="fw-600 me-2">Email:</span><a href="mailto:{{email}}">{{email}}</a>
+        </li>
+        <li><span class="fw-600 me-2">Age:</span>{{age}}</li>
+        <li class="border-0">
+          <span class="fw-600 me-2">From:</span>{{from}}
+        </li>
+      </ul>
+      <a href="../../../assets/Resume/Meghana.pdf" download=""
+        class="btn btn-primary rounded-pill">Download CV</a>
+    </div>
+  </div>
+  <div fxLayout="row wrap"  class="details text-center text-white mt-5">
+    <div fxFlex="25" fxFlex.lt-md="25" fxFlex.lt-sm="50"  class="box box-p sm-br1">
+      <h4 class="text-12 text-white-50"><span>4</span>+</h4>
+      <p class="mb-0 text-light fw-600">Years Experiance</p>
+    </div>
+    <div fxFlex="25" fxFlex.lt-md="25" fxFlex.lt-sm="50" class="box box-p sm-br2">
+      <h4 class="text-12 text-white-50"><span>3</span>+</h4>
+      <p class="mb-0 text-light fw-600">Happy Clients</p>
+    </div>
+    <div fxFlex="25" fxFlex.lt-md="25" fxFlex.lt-sm="50" class="box box-p sm-br3">
+      <h4 class="text-12 text-white-50"><span>5</span>+</h4>
+      <p class="mb-0 text-light fw-600">Projects Done</p>
+    </div>
+    <div fxFlex="25" fxFlex.lt-md="25" fxFlex.lt-sm="50" class="box box-p sm-br4 border-0">
+      <h4 class="text-12 text-white-50"><span>2</span></h4>
+      <p class="mb-0 text-light fw-600">Get Awards</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-lr bg-nav text-white">
+  <a class="navbar-brand text-white" href="#"><b>Portfolio</b></a>
+  <button class="navbar-toggler fl-rt text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="bi bi-list"></i>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto text-white" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <li class="nav-item" >
+        <a class="nav-link" [ngClass]="{'active': menuActionService.currentSection === 'section1'}" href="#section1" >Home</a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link" [ngClass]="{'active': menuActionService.currentSection === 'section2'}" href="#section2" >About me</a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link" [ngClass]="{'active': menuActionService.currentSection === 'section3'}" href="#section3" >What I Do</a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link" [ngClass]="{'active': menuActionService.currentSection === 'section4'}" href="#section4" >Resume</a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link" [ngClass]="{'active': menuActionService.currentSection === 'section5'}" href="#section5" >Portfolio</a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link" [ngClass]="{'active': menuActionService.currentSection === 'section6'}" href="#section6" >Contact</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
