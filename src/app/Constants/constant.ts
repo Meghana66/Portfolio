@@ -80,8 +80,9 @@ export class constant {
   public static projects: Project[] = [
 {
   name:"Worldpay Dashboard Apllication",
-  mainImage: "assets/...",
+  mainImage: "assets/dashboard-fis.jpeg",
   Images: [
+    "assets/dashboard-fis.jpeg"
 ]
 },
   ];
