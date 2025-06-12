@@ -48,8 +48,8 @@ export class constant {
 
   public static experience: experience[] = [
     {
-      company: "FIS Global",
-      date: "jun/2021 - present",
+      company: "Worldpay",
+      date: "June/2021 - present",
       designation: "Software Engineer"
     }
   ];
